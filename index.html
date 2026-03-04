@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Important Question 😌❤️</title>
+<style>
+       body {
+           background: linear-gradient(to right, #ffdde1, #ee9ca7);
+           text-align: center;
+           font-family: Arial, sans-serif;
+           height: 100vh;
+           overflow: hidden;
+       }
+       h1 {
+           margin-top: 120px;
+           color: #d6336c;
+       }
+       .btn {
+           padding: 12px 25px;
+           font-size: 18px;
+           border: none;
+           border-radius: 25px;
+           cursor: pointer;
+           margin: 20px;
+           position: absolute;
+       }
+       #yesBtn {
+           background-color: #28a745;
+           color: white;
+           left: 45%;
+           top: 50%;
+       }
+       #noBtn {
+           background-color: #dc3545;
+           color: white;
+           left: 55%;
+           top: 50%;
+       }
+       #message {
+           display: none;
+           margin-top: 50px;
+           font-size: 22px;
+           color: white;
+           padding: 20px;
+       }
+</style>
+</head>
+<body>
+<h1>Do You Love Me? 😏❤️</h1>
+<button class="btn" id="yesBtn" onclick="showLove()">YES 😍</button>
+<button class="btn" id="noBtn" onmouseover="moveButton()">NO 😜</button>
+<div id="message">
+<p>🥹 I knew ittttt!</p>
+<p>Even when you're angry...</p>
+<p>You are still the cutest human on this planet 🌍❤️</p>
+<p>Listen madam 😌</p>
+<p>If you're angry, I'm sorry 💔</p>
+<p>I miss you more than my phone misses charging at 1% 🔋😭</p>
+<p>Your smile > My ego</p>
+<p>Your happiness > Everything</p>
+<h2>💖 I LOVE YOU SO MUCH 💖</h2>
+<p>Now come here and give me a virtual hug 🤗</p>
+</div>
+<script>
+       function moveButton() {
+           var button = document.getElementById("noBtn");
+           var x = Math.random() * (window.innerWidth - 100);
+           var y = Math.random() * (window.innerHeight - 100);
+           button.style.left = x + "px";
+           button.style.top = y + "px";
+       }
+       function showLove() {
+           document.getElementById("yesBtn").style.display = "none";
+           document.getElementById("noBtn").style.display = "none";
+           document.getElementById("message").style.display = "block";
+       }
+</script>
+</body>
+</html>
